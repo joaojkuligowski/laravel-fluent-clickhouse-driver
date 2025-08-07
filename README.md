@@ -1,5 +1,8 @@
 # Laravel ClickHouse Eloquent Driver
 
+Package proudly made in Brazil <3!
+[English](https://github.com/joaojkuligowski/laravel-fluent-clickhouse-driver/README.md) | [Portuguese](https://github.com/joaojkuligowski/laravel-fluent-clickhouse-driver/README-pt-BR.md)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
 [![Total Downloads](https://img.shields.io/packagist/dt/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
 
