@@ -132,7 +132,7 @@ class Grammar extends PostgresGrammar
     public function compileIndex(Blueprint $blueprint, Fluent $command)
     {
         return sprintf(
-            'create index %s on %s%s (%s)',
+            'create index if not exists %s on %s%s (%s) TYPE minmax GRANULARITY 4',
             $this->wrap($command->index),
             $this->wrapTable($blueprint),
             $command->algorithm ? ' using ' . $command->algorithm : '',

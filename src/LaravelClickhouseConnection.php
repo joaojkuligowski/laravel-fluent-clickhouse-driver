@@ -71,9 +71,9 @@ class LaravelClickhouseConnection extends PostgresConnection
             $client = ClickhouseHttp::getInstance($this->config)->getClient();
             $client->database($this->config['database']);
             $client->ping(true);
-            $client->settings()->set('allow_create_index_without_type', 1);
-            $client->settings()->set('max_execution_time', $this->config['timeout'] ?? 0);
-            $client->settings()->set('max_block_size', 0);
+            // $client->settings()->set('allow_create_index_without_type', true);
+            // $client->settings()->set('max_execution_time', $this->config['timeout'] ?? 0);
+            // $client->settings()->set('max_block_size', false);
             
             if ($this->config['async']) {
                 $raw_output = $client->selectAsync($query);
