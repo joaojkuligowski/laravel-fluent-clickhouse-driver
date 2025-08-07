@@ -3,8 +3,9 @@
 Package proudly made in Brazil <3!
 [English](https://github.com/joaojkuligowski/laravel-fluent-clickhouse-driver/blob/main/README.md) | [Portuguese](https://github.com/joaojkuligowski/laravel-fluent-clickhouse-driver/blob/main/README-pt-BR.md)
 
-[![Versão Mais Recente no Packagist](https://img.shields.io/packagist/v/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
-[![Total de Downloads](https://img.shields.io/packagist/dt/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
+[![Total Downloads](https://img.shields.io/packagist/dt/joaojkuligowski/laravel-fluent-clickhouse-driver.svg?style=flat-square)](https://packagist.org/packages/joaojkuligowski/laravel-fluent-clickhouse-driver)
+
 
 Um driver Eloquent fluente para integração do banco de dados ClickHouse com Laravel. Este pacote permite usar o ORM Eloquent do Laravel com bancos de dados ClickHouse, fornecendo uma interface familiar e poderosa para operações de análise e big data.
 
