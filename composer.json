@@ -1,0 +1,78 @@
+{
+    "name": "joaojkuligowski/laravel-fluent-clickhouse-driver",
+    "description": "Fluent Eloquent for ClickHouse",
+    "keywords": [
+        "joaojkuligowski",
+        "laravel",
+        "clickhouse",
+        "fluent",
+        "orm",
+        "database"
+    ],
+    "homepage": "https://github.com/joaojkuligowski/laravel-fluent-clickhouse-driver",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "joaojkuligowski",
+            "email": "joaojkuligowski@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.9",
+        "illuminate/container": "^12.0",
+        "illuminate/contracts": "^12.0",
+        "illuminate/database": "^12.0",
+        "illuminate/events": "^12.0",
+        "illuminate/http": "^12.0",
+        "illuminate/support": "^12.0",
+        "lizhichao/one-ck": "^0.2.9",
+        "smi2/phpclickhouse": "^1.6",
+        "spatie/laravel-package-tools": "^1.14.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.9 || ^8.0",
+        "orchestra/testbench": "^8.0 || ^9.0 || ^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JoaoJ\\LaravelClickhouse\\": "src/",
+            "JoaoJ\\LaravelClickhouse\\Connectors\\": "src/Connectors/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JoaoJ\\LaravelClickhouse\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JoaoJ\\LaravelClickhouse\\LaravelClickhousePackageServiceProvider",
+                "JoaoJ\\LaravelClickhouse\\LaravelClickhouseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
